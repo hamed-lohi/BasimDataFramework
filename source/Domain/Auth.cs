@@ -1,9 +1,10 @@
+using Architecture.Domain.Base;
 using DotNetCore.Domain;
 using System;
 
 namespace Architecture.Domain
 {
-    public class Auth : Entity<long>
+    public class Auth : BaseDomain<long>
     {
         public Auth
         (

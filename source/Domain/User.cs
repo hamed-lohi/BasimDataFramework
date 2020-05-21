@@ -1,8 +1,9 @@
+using Architecture.Domain.Base;
 using DotNetCore.Domain;
 
 namespace Architecture.Domain
 {
-    public class User : Entity<long>
+    public class User : BaseDomain<long>
     {
         public User
         (
