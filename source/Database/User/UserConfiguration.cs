@@ -15,6 +15,9 @@ namespace Architecture.Database
             builder.Property(user => user.Id).ValueGeneratedOnAdd().IsRequired();
             builder.Property(user => user.Status).IsRequired();
 
+            builder.Property(user => user.Phone).HasMaxLength(13);
+            builder.Property(user => user.Mobile).HasMaxLength(13);
+
             builder.OwnsOne(user => user.FullName, ownedBuilder =>
             {
                 ownedBuilder.Property(fullName => fullName.Name).HasColumnName(nameof(FullName.Name)).HasMaxLength(100).IsRequired();
