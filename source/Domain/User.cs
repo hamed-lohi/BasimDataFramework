@@ -23,6 +23,16 @@ namespace Architecture.Domain
 
         public Email Email { get; private set; }
 
+        /// <summary>
+        /// mobile number
+        /// </summary>
+        public string Mobile { get; private set; }
+
+        /// <summary>
+        /// phone number
+        /// </summary>
+        public string Phone { get; private set; }
+
         public Status Status { get; private set; }
 
         public Auth Auth { get; private set; }
