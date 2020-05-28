@@ -1,10 +1,28 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <TargetFramework>netcoreapp3.1</TargetFramework>
     </PropertyGroup>
     <ItemGroup>
       <Compile Remove="Migrations\20200521114146_first-migration.cs" />
       <Compile Remove="Migrations\20200521114146_first-migration.Designer.cs" />
+      <Compile Remove="Migrations\20200521114829_phoneAdded.cs" />
+      <Compile Remove="Migrations\20200521114829_phoneAdded.Designer.cs" />
+      <Compile Remove="Migrations\20200521115151_phoneAdded1.cs" />
+      <Compile Remove="Migrations\20200521115151_phoneAdded1.Designer.cs" />
+      <Compile Remove="Migrations\20200524162836_BaseDomainInsertLog.cs" />
+      <Compile Remove="Migrations\20200524162836_BaseDomainInsertLog.Designer.cs" />
+      <Compile Remove="Migrations\20200524162941_BaseDomainInsertLogRemoved.cs" />
+      <Compile Remove="Migrations\20200524162941_BaseDomainInsertLogRemoved.Designer.cs" />
+      <Compile Remove="Migrations\20200528131744_jalal.cs" />
+      <Compile Remove="Migrations\20200528131744_jalal.Designer.cs" />
+      <Compile Remove="Migrations\20200528132943_jalal.cs" />
+      <Compile Remove="Migrations\20200528132943_jalal.Designer.cs" />
+      <Compile Remove="Migrations\20200528133204_hamed.cs" />
+      <Compile Remove="Migrations\20200528133204_hamed.Designer.cs" />
+      <Compile Remove="Migrations\20200528134240_hamed.cs" />
+      <Compile Remove="Migrations\20200528134240_hamed.Designer.cs" />
+      <Compile Remove="Migrations\20200528140407_baseDomainFields.cs" />
+      <Compile Remove="Migrations\20200528140407_baseDomainFields.Designer.cs" />
     </ItemGroup>
     <ItemGroup>
         <PackageReference Include="DotNetCore.EntityFrameworkCore" Version="11.18.0" />

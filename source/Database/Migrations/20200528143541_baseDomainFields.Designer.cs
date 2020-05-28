@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Architecture.Database.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20200521115151_phoneAdded1")]
-    partial class phoneAdded1
+    [Migration("20200528143541_baseDomainFields")]
+    partial class baseDomainFields
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -40,6 +40,30 @@ namespace Architecture.Database.Migrations
 
                     b.Property<int>("Roles")
                         .HasColumnType("int");
+
+                    b.Property<string>("SInsertDate")
+                        .HasColumnType("nvarchar(10)")
+                        .HasMaxLength(10);
+
+                    b.Property<string>("SInsertTime")
+                        .HasColumnType("nvarchar(8)")
+                        .HasMaxLength(8);
+
+                    b.Property<string>("SInsertUser")
+                        .HasColumnType("nvarchar(100)")
+                        .HasMaxLength(100);
+
+                    b.Property<string>("SUpdateDate")
+                        .HasColumnType("nvarchar(10)")
+                        .HasMaxLength(10);
+
+                    b.Property<string>("SUpdateTime")
+                        .HasColumnType("nvarchar(8)")
+                        .HasMaxLength(8);
+
+                    b.Property<string>("SUpdateUser")
+                        .HasColumnType("nvarchar(100)")
+                        .HasMaxLength(100);
 
                     b.Property<string>("Salt")
                         .IsRequired()
@@ -81,6 +105,30 @@ namespace Architecture.Database.Migrations
                     b.Property<string>("Phone")
                         .HasColumnType("nvarchar(13)")
                         .HasMaxLength(13);
+
+                    b.Property<string>("SInsertDate")
+                        .HasColumnType("nvarchar(10)")
+                        .HasMaxLength(10);
+
+                    b.Property<string>("SInsertTime")
+                        .HasColumnType("nvarchar(8)")
+                        .HasMaxLength(8);
+
+                    b.Property<string>("SInsertUser")
+                        .HasColumnType("nvarchar(100)")
+                        .HasMaxLength(100);
+
+                    b.Property<string>("SUpdateDate")
+                        .HasColumnType("nvarchar(10)")
+                        .HasMaxLength(10);
+
+                    b.Property<string>("SUpdateTime")
+                        .HasColumnType("nvarchar(8)")
+                        .HasMaxLength(8);
+
+                    b.Property<string>("SUpdateUser")
+                        .HasColumnType("nvarchar(100)")
+                        .HasMaxLength(100);
 
                     b.Property<int>("Status")
                         .HasColumnType("int");

@@ -9,7 +9,7 @@ namespace Architecture.Database
         {
             var builder = new DbContextOptionsBuilder<Context>();
 
-            builder.UseSqlServer("Server=.;Database=BasimDB;trusted_connection=true;");
+            builder.UseSqlServer("Server=185.55.224.148;Database=basimdat_Basim;User ID=basimdat_sa;Password=ha#jaBD@14;");
 
             return new Context(builder.Options);
         }

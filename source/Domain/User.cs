@@ -3,7 +3,7 @@ using DotNetCore.Domain;
 
 namespace Architecture.Domain
 {
-    public class User : BaseDomain<long>
+    public class User : BaseDomain
     {
         public User
         (
