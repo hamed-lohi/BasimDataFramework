@@ -13,7 +13,6 @@
     "editor.codeActionsOnSaveTimeout": 100,
     "editor.dragAndDrop": false,
     "editor.formatOnPaste": true,
-    "editor.formatOnSave": true,
     "editor.formatOnSaveTimeout": 100,
     "editor.formatOnType": true,
     "editor.minimap.enabled": false,

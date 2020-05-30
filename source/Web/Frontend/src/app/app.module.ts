@@ -6,19 +6,26 @@ import { AppComponent } from "./app.component";
 import { AppRoutingModule } from "./app.routing.module";
 import { AppErrorHandler } from "./core/handlers/error.handler";
 import { AppHttpInterceptor } from "./core/interceptors/http.interceptor";
+import { AppHomeComponent } from "./views/main/home/home.component";
+import { SharedModule } from "./shared.module";
 
 @NgModule({
     bootstrap: [AppComponent],
-    declarations: [AppComponent],
+    declarations: [AppComponent, AppHomeComponent],
     imports: [
         BrowserModule,
         HttpClientModule,
         AppLayoutsModule,
-        AppRoutingModule
+        AppRoutingModule,
+        SharedModule,
     ],
     providers: [
         { provide: ErrorHandler, useClass: AppErrorHandler },
-        { provide: HTTP_INTERCEPTORS, useClass: AppHttpInterceptor, multi: true }
-    ]
+        {
+            provide: HTTP_INTERCEPTORS,
+            useClass: AppHttpInterceptor,
+            multi: true,
+        },
+    ],
 })
-export class AppModule { }
+export class AppModule {}
